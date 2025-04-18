@@ -10,14 +10,15 @@ set(THREADS_PREFER_PTHREAD_FLAG ON)
 #set(CMAKE_BUILD_TYPE Release)
 
 #include directories
-include_directories("/usr/include/**")
-include_directories("/usr/local/include/**")
+include_directories("/usr/include")
+include_directories("/usr/local/include")
 include_directories(${SQLITE3_INCLUDE_DIRS})
 
 # Ativar warnings
 add_compile_options(-Wall -Wextra -Wpedantic)
 
 # Incluir subdiretórios
+add_subdirectory(external/imgui)
 add_subdirectory(src)
 add_subdirectory(tests)
 
