@@ -3,15 +3,18 @@
         {
             "name": "Linux",
             "includePath": [
-                "${default}"
+              "${default}",
+              "/usr/include/**",
+              "${workspaceFolder}/**"
             ],
             "defines": [],
             "cStandard": "c17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/c++",
+            "cppStandard": "c++20",
             "compileCommands": [
-                "build/compile_commands.json"
-            ],
-            "intelliSenseMode": "linux-clang-x64",
-            "cppStandard": "c++20"
+              "build/compile_commands.json"
+            ]
         }
     ],
     "version": 4

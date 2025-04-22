@@ -1,3 +1,5 @@
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 file(GLOB_RECURSE SRC_FILES *.cpp *.h)
 
 add_executable(BaseProject ${SRC_FILES} ${IMGUI_SOURCES})
